@@ -35,9 +35,9 @@ Okay, so let's steal from the simple example above the things we need to add pip
 1. Add a [process](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced_methods?view=powershell-7#process) block (code that needs to run against each piped object goes here)
 1. Add a [end](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced_methods?view=powershell-7#end) block (cleanup code goes here)
 
-That'll do it!
-
 ![Function DOES support the Pipeline](./images/pipeline_support_present.png)
+
+That did it - piping hot fruit coming right up!
 
 ## Conclusion
 
