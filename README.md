@@ -8,7 +8,7 @@ With PowerShell you can ['pipe'](https://docs.microsoft.com/en-us/powershell/mod
 
 This is a great feature of the shell and as it turns out (with just a little bit of code) you can add pipeline support to the functions you write.  Interested?  Follow along!
 
-## Help - I can't pipe things into my function!
+## Pipe objects to my function?  Nope.
 
 Below is a simple function which accepts one or more pieces of fruit as an argument. As you can see though, that same
 fruit can't be passed in from the pipeline:
@@ -17,7 +17,7 @@ fruit can't be passed in from the pipeline:
 
 Notice that we can't pipe data into our function because our ```Fruit``` parameter doesn't support it. Well that's no good - let's fix it!
 
-## Show me what that pipeline support *looks* like
+## So what's the trick (to get pipeline support)?
 
 Okay so what's it take to get that pipeline piping? Not much - check out this *super simple* function which has pipeline support:
 
@@ -25,7 +25,7 @@ Okay so what's it take to get that pipeline piping? Not much - check out this *s
 
 Notice the ```begin``` block gets entered once at the *beginning*, the ```process``` block gets entered *for each object* in the pipeline, and the ```end``` block get entered once at well, the *end*.
 
-## Bring on the pipe (to my function)!
+## Let's do this (add pipeline support)!
 
 Okay, so let's steal from the simple example above the things we need to add pipeline support to our original function:
 
