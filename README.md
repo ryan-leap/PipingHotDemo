@@ -19,7 +19,7 @@ Notice that we can't pipe data into our function because our ```Fruit``` paramet
 
 ## So what's the trick (to get pipeline support)?
 
-Okay so what's it take to get that pipeline piping? Not much - check out this *super simple* function which has pipeline support:
+Okay, so what's it take to get that pipeline piping? Not much - check out this *super simple* function which has pipeline support:
 
 ![Simple Pipeable Function](./images/pipeline_support_simple.png)
 
